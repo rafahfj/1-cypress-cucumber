@@ -6,6 +6,7 @@ Feature: Login
     When I enter valid credentials
     And I click the login button
     And I click logout
+    Then I should be redirected to the dashboard
 
   Scenario: Wrong password
     Given I open the login page
